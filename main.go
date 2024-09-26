@@ -105,7 +105,7 @@ func carregaConfig() {
 		fmt.Println("Error getting executable path:", err)
 		return
 	}
-	configPath := filepath.Join(filepath.Dir(execPath), "config.cfg")
+	configPath := filepath.Join(filepath.Dir(execPath), "pgbackup.cfg")
 	config, err = loadConfig(configPath)
 	if err != nil {
 		fmt.Println("Error loading config:", err)
